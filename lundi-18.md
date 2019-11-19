@@ -18,3 +18,9 @@ Inconvénients :
 déploiement
 stricte conformité à la norme
 vitesse de lecture faible
+
+
+EXCERCICES avec Raphik : 10 demandes de requête 
+Résolu
+
+TÉLÉCHARGEMENT WorkBench : résolu
