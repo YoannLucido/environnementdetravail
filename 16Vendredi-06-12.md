@@ -1,0 +1,3 @@
+vendredi-06-11
+
+ 1/ veille de 1h00 sur le format csv + sur l'utilisation de google sheet pour import/export de données csv (consulter la documentation) 2/ Atelier : trouver des offres d'emplois, de stage liées au métier de la données sur le territoire aix-marseille. Créer une table Entreprises avec contacts. Créer une table Compétences. Créer une table Offres  avec des champs contenant des listes qui pointent vers des données de la table Entreprises et Compétences 3/ Livrable : un tableur (Google Sheets) recherche de stage avec un export prenom-nom-data-recherche-stage.csv sur votre dépôt github "dev-data-job-list-market" (modifié pour avoir un intitulé plus pro..)  . 
