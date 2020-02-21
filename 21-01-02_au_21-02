@@ -1,0 +1,85 @@
+21-01-02_au_21-02
+
+Note REVERSE MENTORING
+=======================
+
+20 personnes sévices civiques 18-20 ans
+atelier en 3 temps : 1.innover et prototyper 2.pdf enedys 3. protéger vos données personnels en ligne
+
+commentaires sur pdf
+jeu de cartes, concept deux cartes créer un concept, ex : coca + starbucks = cafe pétillant == 10min
+« A votre avis elle sert a quoi cette activité ? » faire ressortir le mot créativité
+
+alice : distribuer les feuilles en plus de projeter, faire discuter en groupe les problèmes sur lesquels ils veulent se concentrer 5min : les problèmes c'est les points 1 a 5
+
+imaginer des solutions pour alice : idée application par groupe 15 min
+2 a 6 écrans
+ 
+prendre en photo et faire le sliens 10MIN
+
+les cibles du prototype : client, intégrateur, financeurs
+presenter le projet en 60sec pas obligé de montrer le support mais doit donner le titre le concept 
+
+demander si ya des conseils de sremarques pour améliorer les projets 
+
+etape de relfexion 
+
+
+video du voyant : ten as pensé quoi 
+
+
+!= different de
+
+entreprise Meteore : petite structure
+
+EVALUATION
+===========
+
+
+3/4/ photo workbench creation database tables et colonnes
+
+5 /CREATE USER 'RNE_user'@'localhost' IDENTIFIED BY 'RNE_password' 
+GRANT ALL PRIVILEGES ON examen.table TO ‘RNE_user'@'localhost';
+
+6/ 
+from sqlalchemy import create_engine
+import pandas as pd
+
+engine = create_engine("mysql+pymysql://newuser:password@localhost/examen")
+
+def chargement(link, table):
+    print("Lecture des données")
+    df = pd.read_excel(link , skiprows=1,header=0)
+    df.to_sql('categorie_professionnelle', con = engine, if_exists='append', index = False)
+    return print("fin")
+
+chargement('/Users/yoannlucido/Desktop/examen/categorie_professionelle.xlsx', 
+            ‘categorie_professionnelle’)
+
+Appliquer à toutes les tables
+
+7/ fichier pdf
+
+8/ select * from codes_nuances where libellé like '%Union%' ;
+
+9/ jointures mais trouve pas
+
+10/ 
+
+SELECT AVG(timestampdiff( SQL_TSI_YEAR, 'date de naissance',  '2014-01-01' ) ) AS age_moyen FROM  elus_mun2014 where sexe = 'M' ;
+
+resultat NULL
+
+11/
+
+12/ use examen ;
+
+select Ouvriers, name
+from Departements join categorie_professionnelle
+on Departements.code = categorie_professionnelle.Ouvriers
+
+Order by Ouvriers desc limit 10
+
+
+
+
